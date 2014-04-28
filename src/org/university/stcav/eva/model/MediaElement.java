@@ -25,6 +25,16 @@ public class MediaElement {
         AvaliableAudio = false;
         isMEValidate = false;
     }
+    
+    public MediaElement(MediaElement clone) {
+        this.isMEValidate = clone.isMEValidate;
+        this.audioElement = clone.audioElement;
+        this.videoElement = clone.videoElement;
+        this.duration = clone.duration;
+        this.name = clone.name;
+        this.AvaliabeVideo = clone.AvaliabeVideo;
+        this.AvaliableAudio = clone.AvaliableAudio;
+    }
 
     public MediaElement(AudioElement audioElement, VideoElement videoElement, String name) {
         this.audioElement = audioElement;
